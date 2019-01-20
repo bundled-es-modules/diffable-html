@@ -1,0 +1,20 @@
+{
+  "name": "@bundled-es-modules/diffable-html",
+  "version": "4.0.0-rc.1",
+  "description": "mirror of diffable-html, bundled and exposed as ES module",
+  "author": "Thomas Allmer <d4kmor@gmail.com>",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "diffable-html": "4.0.0",
+    "rollup": "^1.1.1",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  },
+  "scripts": {
+    "build": "rollup -c ./rollup.config.js"
+  }
+}
